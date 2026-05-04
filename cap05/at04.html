@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWEB1 — Cap. 05 — AT04 — Evento</title>
+</head>
+<body>
+
+  <header>
+    <h1>Inscrição — Semana de Tecnologia IFAL</h1>
+    <p><a href="../index.html">← Voltar para a página principal</a></p>
+  </header>
+
+  <main>
+
+    <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+      <h2>Identificação</h2>
+
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="cidade">Cidade:</label><br>
+      <input list="cidades" id="cidade" name="cidade">
+      <datalist id="cidades">
+        <option value="Maceió">
+        <option value="Arapiraca">
+        <option value="Palmeira dos Índios">
+        <option value="Rio Largo">
+        <option value="Penedo">
+        <option value="Maragogi">
+        <option value="União dos Palmares">
+        <option value="Delmiro Gouveia">
+      </datalist><br><br>
+
+      <label for="foto">Foto:</label><br>
+      <input type="file" id="foto" name="foto"><br><br>
+
+      <h2>Preferências</h2>
+
+      <label for="chegada">Data e hora:</label><br>
+      <input type="datetime-local" id="chegada" name="chegada"><br><br>
+
+      <label for="experiencia">Experiência:</label><br>
+      <input type="range" id="experiencia" name="experiencia" min="0" max="10"><br><br>
+
+      <label for="cor">Cor da camiseta:</label><br>
+      <input type="color" id="cor" name="cor"><br><br>
+
+      <label for="oficinas">Oficinas:</label><br>
+      <select id="oficinas" name="oficinas[]" multiple size="4">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Python</option>
+        <option>Banco de Dados</option>
+      </select>
+
+      <input type="hidden" name="edicao" value="2026">
+
+      <br><br>
+
+      <button type="submit">Confirmar inscrição</button>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
