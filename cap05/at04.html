@@ -45,8 +45,10 @@
       <label for="chegada">Data e hora:</label><br>
       <input type="datetime-local" id="chegada" name="chegada"><br><br>
 
-      <label for="experiencia">Experiência:</label><br>
-      <input type="range" id="experiencia" name="experiencia" min="0" max="10"><br><br>
+      <!-- AQUI ESTÁ A ALTERAÇÃO -->
+      <label for="experiencia">Experiência: <span id="valor-exp">0</span>/10</label><br>
+      <input type="range" id="experiencia" name="experiencia" min="0" max="10" value="0"
+        oninput="document.getElementById('valor-exp').textContent = this.value"><br><br>
 
       <label for="cor">Cor da camiseta:</label><br>
       <input type="color" id="cor" name="cor"><br><br>
