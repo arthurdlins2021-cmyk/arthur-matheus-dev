@@ -1,0 +1,72 @@
+@import url('at05-reset.css');
+@import url('at05-variables.css');
+
+body{
+  font-family: Arial;
+  background-color: var(--cor-fundo);
+}
+
+.hero{
+  height: 100vh;
+
+  background-image:
+  linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+  url('https://picsum.photos/1200/800');
+
+  background-size: cover;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__titulo{
+  font-size: var(--texto-display);
+}
+
+.btn{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primario{
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.card{
+  position: relative;
+
+  width: 300px;
+
+  margin: 2rem auto;
+
+  background-color: white;
+
+  border-radius: var(--raio-md);
+}
+
+.card__badge{
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+
+.card__imagem{
+  height: 150px;
+  background-color: gray;
+}
+
+.card__corpo{
+  padding: 1rem;
+}
