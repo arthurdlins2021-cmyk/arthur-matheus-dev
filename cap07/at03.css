@@ -1,0 +1,115 @@
+body{
+  font-family: Arial;
+  padding: 20px;
+}
+
+a[href^="https"]{
+  color: green;
+}
+
+a[href^="http://"]{
+  color: red;
+}
+
+a[href^="http://"]::after{
+  content: " ⚠";
+}
+
+a[href$=".pdf"]{
+  color: orange;
+}
+
+a[href$=".pdf"]::after{
+  content: " [PDF]";
+}
+
+a[href^="#"]{
+  color: gray;
+  font-style: italic;
+}
+
+a[target="_blank"]::after{
+  content: " ↗";
+}
+
+li:first-child{
+  font-weight: bold;
+}
+
+li:last-child{
+  color: blue;
+}
+
+ol li:nth-child(even){
+  background-color: #ddd;
+}
+
+ol li:nth-child(odd){
+  background-color: #eee;
+}
+
+ol li:nth-child(3){
+  border-left: 4px solid red;
+}
+
+input:focus{
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+input:disabled{
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input:required{
+  border-left: 3px solid orange;
+}
+
+button:hover{
+  background-color: lightblue;
+}
+
+.citacao::before{
+  content: '"';
+  color: red;
+  font-size: 2rem;
+}
+
+.citacao::after{
+  content: '"';
+  color: red;
+  font-size: 2rem;
+}
+
+.obrigatorio::after{
+  content: " *";
+  color: red;
+}
+
+::selection{
+  background-color: black;
+  color: white;
+}
+
+.input-custom::placeholder{
+  color: gray;
+  font-style: italic;
+}
+
+h3 + p{
+  color: blue;
+  font-size: 1.1rem;
+}
+
+li:not(.ativo){
+  opacity: 0.5;
+}
+
+li.ativo{
+  font-weight: bold;
+}
+
+li.ativo::before{
+  content: "✔ ";
+}
