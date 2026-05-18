@@ -1,0 +1,87 @@
+:root{
+  --cor-primaria: blue;
+  --cor-fundo: white;
+  --cor-texto: black;
+  --altura-nav: 60px;
+  --espaco-md: 1rem;
+  --espaco-lg: 2rem;
+  --raio-borda: 8px;
+  --raio-circulo: 9999px;
+}
+
+body{
+  font-family: Arial;
+  margin: 0;
+}
+
+.nav-fixa{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+main{
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.titulo-sticky{
+  position: sticky;
+  top: 60px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.cartao-destaque{
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 300px;
+}
+
+.selo{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 9999px;
+  padding: 5px;
+}
+
+.btn-topo{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.tooltip-container{
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-texto{
+  visibility: hidden;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.tooltip-container:hover .tooltip-texto{
+  visibility: visible;
+}
