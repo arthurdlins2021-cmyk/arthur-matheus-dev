@@ -1,0 +1,16 @@
+:root{
+  --cor-primaria: blue;
+  --cor-secundaria: gray;
+  --cor-destaque: orange;
+  --cor-sucesso: green;
+  --cor-erro: red;
+  --cor-texto: #222;
+  --cor-texto-claro: white;
+  --cor-fundo: #f5f5f5;
+
+  --texto-display: clamp(2rem, 5vw, 4rem);
+
+  --espaco-md: 1rem;
+
+  --raio-md: 8px;
+}
